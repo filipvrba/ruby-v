@@ -4,7 +4,7 @@ import time
 
 pub struct Event {
 	name string
-	app string = 'app'
+	app string = get_app_name()
 }
 
 pub fn (e Event) println(message string) {
